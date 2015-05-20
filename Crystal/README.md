@@ -11,7 +11,7 @@ $ crystal deps
 ## Build
 
 ```
-$ crystal build crystal_redis_performance.cr
+$ crystal build crystal_redis_performance.cr --release
 ```
 
 ## Run

@@ -2,6 +2,7 @@ Crystal/.deps
 Crystal/.deps.lock
 Crystal/libs
 Crystal/crystal_redis_performance
+Crystal/.crystal
 
 C/c_hiredis_performance
 
