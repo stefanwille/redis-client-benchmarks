@@ -7,3 +7,8 @@ C/c_hiredis_performance
 
 Go/go_radix_performance
 Go/go_redigo_performance
+
+Java/jedis-jedis-2.7.2
+Java/jedis-2.7.2.tar.gz
+Java/jedis-2.7.2.tar.gz
+Java/*.class
