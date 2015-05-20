@@ -11,26 +11,26 @@ $ crystal deps
 ## Build
 
 ```
-$ crystal build pipeline-performance.cr
+$ crystal build crystal_redis_performance.cr
 ```
 
 ## Run
 
 ```
-$ time ./pipeline-performance
+$ time ./crystal_redis_performance
 ```
 
 ## My Result
 
 ```
-$ time ./pipeline-performance
-```
+$ time ./crystal_redis_performance
 
 real  0m2.434s
 user  0m1.403s
 sys 0m0.075s
+```
 
---> 411,000 cps
+=> 411,000 cps
 
 
 
