@@ -4,3 +4,6 @@ Crystal/libs
 Crystal/crystal_redis_performance
 
 C/c_hiredis_performance
+
+Go/go_radix_performance
+Go/go_redigo_performance
