@@ -32,9 +32,9 @@ $ java -classpath .:jedis-jedis-2.7.2/target/classes/ JavaJedisPerformance
 ## My Result
 
 ```
-$ $ java -classpath .:jedis-jedis-2.7.2/target/classes/ JavaJedisPerformance
-Total execution time: 1748ms
+$ java -classpath .:jedis-jedis-2.7.2/target/classes/ JavaJedisPerformance
+Total execution time: 2641ms
 ```
 
-=> 572,000 cps
+=> 387,000 cps
 
