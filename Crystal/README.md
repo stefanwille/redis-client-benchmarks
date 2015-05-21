@@ -25,10 +25,10 @@ $ time ./crystal_redis_performance
 ```
 $ time ./crystal_redis_performance
 
-real  0m2.434s
-user  0m1.403s
-sys 0m0.075s
+real  0m1.691s
+user  0m1.572s
+sys 0m0.103s
 ```
 
-=> 411,000 cps
+=> 590,000 cps
 
