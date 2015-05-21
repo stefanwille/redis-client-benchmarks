@@ -4,9 +4,8 @@ var Redis = require('ioredis');
 
 var start = new Date();
 
-// I can't get to 1,000,000 commands in one pipeline, not even to 120,000,
-// because ioredis would just hang.
-// Therefore I use 100,000 and hope that this is precise enough
+// I can't get to 1,000,000 commands in one pipeline, not even to 120,000, because ioredis would just hang.
+// Therefore I use 100,000 and hope that this is precise enough.
 var N = 100*1000;
 
 var redis = new Redis();
