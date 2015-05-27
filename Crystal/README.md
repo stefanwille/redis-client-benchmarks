@@ -1,5 +1,8 @@
 # Crystal
 
+I used a Crystal 0.7.2 prerelease version.
+
+
 ## Install
 
 Download the library into this project:
