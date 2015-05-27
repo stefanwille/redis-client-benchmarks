@@ -2,15 +2,15 @@
 
 ## Install
 
-This code needs the [redis-rb](https://github.com/redis/redis-rb) client library.
+This code needs the [redis-rb](https://github.com/redis/redis-rb) and [hiredisrb](https://github.com/redis/hiredis-rb) client libraries.
 
-On MacOs X, install via
+I have measured redis-rb with the pure Ruby and the Hiredis driver.
+
+Install via
 
 ```
-$ gem install redis
+$ bundle install
 ```
-
-I used version 3.2.1 at the time of this writing.
 
 
 ## Run
@@ -19,14 +19,28 @@ I used version 3.2.1 at the time of this writing.
 $ ruby ruby_redisrb_performance.rb
 ```
 
-
-## My Result
+and
 
 ```
-$ $ ruby ruby_redisrb_performance.rb
+$ ruby_redisrb_hiredis_performance.rb
+```
+
+
+## My Results
+
+```
+$ ruby ruby_redisrb_performance.rb
 Elapsed time: 26.786492s
 Done
 ```
 
 => 37,000 cps
 
+
+```
+$ ruby ruby_redisrb_hiredis_performance.rb
+Elapsed time: 6.518653s
+Done
+```
+
+=> 153,000 cps

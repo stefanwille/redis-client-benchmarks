@@ -4,7 +4,7 @@ N = 1_000_000
 
 start_time = Time.now
 
-redis = Redis.new
+redis = Redis.new(driver: :hiredis)
 redis.pipelined do
   N.times do |i|
     redis.set('foo', 'bar')
