@@ -1,6 +1,6 @@
 # Crystal
 
-I used a Crystal 0.7.2 prerelease version.
+I used version Crystal 0.8.0 and Shards, both installed via Homebrew.
 
 
 ## Install
@@ -8,7 +8,7 @@ I used a Crystal 0.7.2 prerelease version.
 Download the library into this project:
 
 ```
-$ crystal deps
+$ shards install
 ```
 
 ## Build
@@ -25,6 +25,8 @@ $ time ./crystal_redis_performance
 
 ## My Result
 
+This is my old result, from Crystal 0.7.2:
+
 ```
 $ time ./crystal_redis_performance
 
@@ -34,4 +36,3 @@ sys   0m0.086s
 ```
 
 => 685,000 cps
-

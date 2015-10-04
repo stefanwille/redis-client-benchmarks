@@ -3,6 +3,7 @@ Crystal/.deps.lock
 Crystal/libs
 Crystal/crystal_redis_performance
 Crystal/.crystal
+Crystal/.shards
 
 C/c_hiredis_performance
 
