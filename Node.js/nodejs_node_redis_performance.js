@@ -1,10 +1,10 @@
 'use strict';
 
-var Redis = require('ioredis');
+var Redis = require('redis');
 
 var N = 1000 * 1000;
 
-var redis = new Redis({
+var redis = Redis.createClient({
     parser: 'javascript' // Pur javascript, no C involved
 });
 
@@ -18,14 +18,14 @@ var count = 0;
 // be build excluding the first run (force optimization before the first run).
 function execute () {
     var start = Date.now();
-    var pipeline = redis.pipeline();
+    var pipeline = redis.batch();
     for (var i = 0; i < N; i++) {
         pipeline.set('foo', 'bar');
     }
     pipeline.exec(function (err, results) {
         // `err` is always null, and `results` is an array of responses
         // corresponding the sequence the commands where queued.
-        // Each response follows the format `[err, result]`.
+        // Each response is either a error or a result
 
         var end = Date.now();
         var elapsedTime = end - start;
@@ -33,7 +33,7 @@ function execute () {
         console.log('Commands per second: ' + Math.round(N * 1000 / elapsedTime));
 
         if (count++ < 3) {
-            setTimeout(execute, 10); // Try to free some memory. ioredis consumes a lot
+            execute();
         } else {
             redis.quit();
         }
