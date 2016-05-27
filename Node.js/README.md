@@ -16,7 +16,7 @@ I tried both Node.js 0.12.2 and io.js 2.0.1.
 This code needs the [ioredis](https://github.com/luin/ioredis) client library.
 
 ```
-$ npm install ioredis
+$ npm install
 ```
 
 
