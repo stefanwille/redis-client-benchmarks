@@ -1,0 +1,23 @@
+{
+  "name": "redis-client-benchmarks",
+  "version": "1.0.0",
+  "description": "## Note",
+  "main": "nodejs_ioredis_performance.js",
+  "dependencies": {
+    "ioredis": "^1.3.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stefanwille/redis-client-benchmarks.git"
+  },
+  "author": "Stefan Wille",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/stefanwille/redis-client-benchmarks/issues"
+  },
+  "homepage": "https://github.com/stefanwille/redis-client-benchmarks#readme"
+}
