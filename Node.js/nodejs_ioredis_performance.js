@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 var Redis = require('ioredis');
 
@@ -10,7 +10,7 @@ var N = 100*1000;
 
 var redis = new Redis();
 
-redis.del("foo");
+redis.del('foo');
 
 var pipeline = redis.pipeline();
 for(var i = 0; i < N; i++) {
@@ -23,8 +23,8 @@ pipeline.exec(function (err, results) {
 
   var end = new Date();
   var elapsedTime = end - start;
-  console.log("Elapsed time: " + elapsedTime + "ms");
-  console.log("Commands per second: " + Math.round(N * 1000 / elapsedTime));
+  console.log('Elapsed time: ' + elapsedTime + 'ms');
+  console.log('Commands per second: ' + Math.round(N * 1000 / elapsedTime));
 
   redis.disconnect();
 });
