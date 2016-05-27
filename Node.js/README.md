@@ -21,13 +21,6 @@ $ npm install
 
 
 
-## Build
-
-```
-$ gcc -Wall -O2 c_hiredis_performance.c -lhiredis -o c_hiredis_performance
-```
-
-
 ## Run
 
 ```
