@@ -2,5 +2,5 @@ version: 1.0
 shards:
   redis:
     git: https://github.com/stefanwille/crystal-redis.git
-    version: 1.5.1
+    version: 1.6.1
 

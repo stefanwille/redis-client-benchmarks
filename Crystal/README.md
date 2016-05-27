@@ -1,6 +1,6 @@
 # Crystal
 
-I used version Crystal 0.8.0 and Shards, both installed via Homebrew.
+I used version Crystal 0.17.4, installed via Homebrew.
 
 
 ## Install
